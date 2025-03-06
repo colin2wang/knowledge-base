@@ -6,4 +6,6 @@
 
 ## Windows
 
+[Windows](windows.md)
+
 ## Mac OS
