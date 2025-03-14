@@ -1,4 +1,4 @@
-# Operation System
+# Operating System
 
 ## Linux
 
