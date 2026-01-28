@@ -11,7 +11,7 @@ Class-based, object-oriented programming language designed to have as few implem
 ## [Python](python/README.md)
 Interpreted, high-level and general-purpose programming language known for its readability and simplicity.
 
-## [Go (Golang)](go-lang/README.md)
+## [Go (Golang)](go/README.md)
 Open source programming language that makes it easy to build simple, reliable, and efficient software.
 
 ## [Rust](rust/README.md)
