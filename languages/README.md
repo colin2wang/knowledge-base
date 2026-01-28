@@ -1,19 +1,21 @@
 # Programming Languages
 
-## C++
-* [Link](cpp/README.md)
+Comprehensive guides and references for various programming languages.
 
-## Java
-* [Link](java/README.md)
+## [C++](cpp/README.md)
+General-purpose programming language with a bias towards system programming and embedded, resource-constrained software.
 
-## Python
-* [Link](python/README.md)
+## [Java](java/README.md)
+Class-based, object-oriented programming language designed to have as few implementation dependencies as possible.
 
-## Golang
-* [Link](go-lang/README.md)
+## [Python](python/README.md)
+Interpreted, high-level and general-purpose programming language known for its readability and simplicity.
 
-## Rust
-* [Link](rust/README.md)
+## [Go (Golang)](go-lang/README.md)
+Open source programming language that makes it easy to build simple, reliable, and efficient software.
 
-## Dart
-* [Link](dart/README.md)
+## [Rust](rust/README.md)
+Multi-paradigm programming language focused on performance and safety, especially safe concurrency.
+
+## [Dart](dart/README.md)
+Client-optimized language for fast apps on any platform, primarily used with Flutter for mobile development.

@@ -1,5 +1,7 @@
-# Finance Technique
+# Finance Technology
 
-Create such page on 2020-11-13.
+Resources and papers related to quantitative finance and financial technology.
 
-My first topic, something about [Quants](quants/README.md).
+## Quantitative Finance
+- [Quants](quants/README.md) - Quantitative finance resources including papers, models, and strategies
+  - [Research Papers](quants/papers.md) - Collection of research papers in quantitative finance

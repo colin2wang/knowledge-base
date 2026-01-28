@@ -1,3 +1,6 @@
 # Technical Documents
 
-[IO多路复用](io-multiplexing.md)
+In-depth technical articles and guides on advanced computing concepts and techniques.
+
+## Core Concepts
+- [IO Multiplexing](io-multiplexing.md) - Technique for managing multiple I/O operations efficiently in a single thread
