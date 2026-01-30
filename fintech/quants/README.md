@@ -1,13 +1,17 @@
 # Awesome Quants
+
 [![Awesome](https://awesome.re/badge.svg)](https://awesome.re)
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 
-Fork from: [wilsonfreitas/awesome-quant](https://github.com/wilsonfreitas/awesome-quant)
+> A curated list of awesome libraries, packages and resources for Quantitative Finance professionals.
 
-[中文版](README_CN.md)
+**Forked from:** [wilsonfreitas/awesome-quant](https://github.com/wilsonfreitas/awesome-quant)
 
-A curated list of insanely awesome libraries, packages and resources for Quants (Quantitative Finance)
+**Language:** [中文版](README_CN.md) | English
 
-## Languages
+---
+
+## Table of Contents
 
 - [Python](#python)
 - [R](#r)
@@ -19,39 +23,39 @@ A curated list of insanely awesome libraries, packages and resources for Quants 
 - [Scala](#scala)
 - [Ruby](#ruby)
 - [Elixir/Erlang](#elixirerlang)
-- [Golang](#golang)
-- [CSharp](#csharp)
-- [Frameworks](#frameworks) - frameworks that support different languages
-- [Reproducing Works](#reproducing-works) - repositories that reproduce books and papers results or implement examples
+- [Go](#go)
+- [C#](#csharp)
+- [Frameworks](#frameworks)
+- [Reproducing Works](#reproducing-works)
 
 ## Python
 
 ### Numerical Libraries & Data Structures
 
-- [numpy](https://www.numpy.org) - NumPy is the fundamental package for scientific computing with Python.
-- [scipy](https://www.scipy.org) - SciPy (pronounced “Sigh Pie”) is a Python-based ecosystem of open-source software for mathematics, science, and engineering.
-- [pandas](https://pandas.pydata.org) - pandas is an open source, BSD-licensed library providing high-performance, easy-to-use data structures and data analysis tools for the Python programming language.
-- [quantdsl](https://github.com/johnbywater/quantdsl) - Domain specific language for quantitative analytics in finance and trading.
-- [statistics](https://docs.python.org/3/library/statistics.html) - Builtin Python library for all basic statistical calculations.
-- [sympy](https://www.sympy.org/) - SymPy is a Python library for symbolic mathematics.
-- [pymc3](https://docs.pymc.io/) - Probabilistic Programming in Python: Bayesian Modeling and Probabilistic Machine Learning with Theano.
+- [NumPy](https://www.numpy.org) - Fundamental package for scientific computing with Python
+- [SciPy](https://www.scipy.org) - Scientific computing ecosystem for mathematics, science, and engineering
+- [pandas](https://pandas.pydata.org) - High-performance data structures and data analysis tools
+- [quantdsl](https://github.com/johnbywater/quantdsl) - Domain specific language for quantitative analytics in finance
+- [statistics](https://docs.python.org/3/library/statistics.html) - Built-in Python library for basic statistical calculations
+- [SymPy](https://www.sympy.org/) - Python library for symbolic mathematics
+- [PyMC3](https://docs.pymc.io/) - Probabilistic programming for Bayesian modeling and machine learning
 
 ### Financial Instruments and Pricing
 
-- [PyQL](https://github.com/enthought/pyql) - QuantLib's Python port.
-- [pyfin](https://github.com/opendoor-labs/pyfin) - Basic options pricing in Python. [ARCHIVED]
-- [vollib](https://github.com/vollib/vollib) - vollib is a python library for calculating option prices, implied volatility and greeks.
-- [QuantPy](https://github.com/jsmidt/QuantPy) - A framework for quantitative finance In python.
-- [Finance-Python](https://github.com/alpha-miner/Finance-Python) - Python tools for Finance.
-- [ffn](https://github.com/pmorissette/ffn) - A financial function library for Python.
-- [pynance](https://pynance.net) - PyNance is open-source software for retrieving, analysing and visualizing data from stock and derivatives markets.
-- [tia](https://github.com/bpsmith/tia) - Toolkit for integration and analysis.
-- [hasura/base-python-dash](https://platform.hasura.io/hub/projects/hasura/base-python-dash) - Hasura quickstart to deploy Dash framework. Written on top of Flask, Plotly.js, and React.js, Dash is ideal for building data visualization apps with highly custom user interfaces in pure Python.
-- [hasura/base-python-bokeh](https://platform.hasura.io/hub/projects/hasura/base-python-bokeh) - Hasura quickstart to visualize data with bokeh library.
-- [pysabr](https://github.com/ynouri/pysabr) - SABR model Python implementation.
-- [FinancePy](https://github.com/domokane/FinancePy) - A Python Finance Library that focuses on the pricing and risk-management of Financial Derivatives, including fixed-income, equity, FX and credit derivatives.
-- [FinancePy-Examples](https://github.com/domokane/FinancePy-Examples) - Examples of how to use FinancePy
-- [gs-quant](https://github.com/goldmansachs/gs-quant) - Python toolkit for quantitative finance
+- [PyQL](https://github.com/enthought/pyql) - QuantLib's Python port
+- [pyfin](https://github.com/opendoor-labs/pyfin) - Basic options pricing in Python [ARCHIVED]
+- [vollib](https://github.com/vollib/vollib) - Library for calculating option prices, implied volatility and Greeks
+- [QuantPy](https://github.com/jsmidt/QuantPy) - Framework for quantitative finance in Python
+- [Finance-Python](https://github.com/alpha-miner/Finance-Python) - Python tools for finance
+- [ffn](https://github.com/pmorissette/ffn) - Financial function library for Python
+- [PyNance](https://pynance.net) - Open-source software for stock and derivatives market data analysis
+- [tia](https://github.com/bpsmith/tia) - Toolkit for integration and analysis
+- [Dash Quickstart](https://platform.hasura.io/hub/projects/hasura/base-python-dash) - Deploy Dash framework for data visualization applications
+- [Bokeh Quickstart](https://platform.hasura.io/hub/projects/hasura/base-python-bokeh) - Visualize data with Bokeh library
+- [pysabr](https://github.com/ynouri/pysabr) - SABR model Python implementation
+- [FinancePy](https://github.com/domokane/FinancePy) - Library for pricing and risk management of financial derivatives
+- [FinancePy Examples](https://github.com/domokane/FinancePy-Examples) - Examples demonstrating FinancePy usage
+- [GS Quant](https://github.com/goldmansachs/gs-quant) - Python toolkit for quantitative finance
 
 ### Indicators
 - [pandas_talib](https://github.com/femtotrader/pandas_talib) - A Python Pandas implementation of technical analysis indicators.
@@ -112,95 +116,95 @@ A curated list of insanely awesome libraries, packages and resources for Quants 
 
 ### Factor Analysis
 
-- [alphalens](https://github.com/quantopian/alphalens) - Performance analysis of predictive alpha factors.
-- [Spectre](https://github.com/Heerozh/spectre) - GPU-accelerated Factors analysis library and Backtester
+- [alphalens](https://github.com/quantopian/alphalens) - Performance analysis of predictive alpha factors
+- [Spectre](https://github.com/Heerozh/spectre) - GPU-accelerated factors analysis library and backtester
 
 ### Time Series
 
-- [ARCH](https://github.com/bashtage/arch) - ARCH models in Python.
-- [statsmodels](http://statsmodels.sourceforge.net) - Python module that allows users to explore data, estimate statistical models, and perform statistical tests.
-- [dynts](https://github.com/quantmind/dynts) - Python package for timeseries analysis and manipulation.
-- [PyFlux](https://github.com/RJT1990/pyflux) - Python library for timeseries modelling and inference (frequentist and Bayesian) on models.
-- [tsfresh](https://github.com/blue-yonder/tsfresh) - Automatic extraction of relevant features from time series.
-- [hasura/quandl-metabase](https://platform.hasura.io/hub/projects/anirudhm/quandl-metabase-time-series) - Hasura quickstart to visualize Quandl's timeseries datasets with Metabase.
+- [ARCH](https://github.com/bashtage/arch) - ARCH models in Python
+- [statsmodels](http://statsmodels.sourceforge.net) - Statistical models exploration and testing toolkit
+- [dynts](https://github.com/quantmind/dynts) - Time series analysis and manipulation package
+- [PyFlux](https://github.com/RJT1990/pyflux) - Time series modeling and inference library
+- [tsfresh](https://github.com/blue-yonder/tsfresh) - Automatic feature extraction from time series
+- [Quandl Metabase](https://platform.hasura.io/hub/projects/anirudhm/quandl-metabase-time-series) - Visualize Quandl time series datasets with Metabase
 
 ### Calendars
 
-- [trading_calendars](https://github.com/quantopian/trading_calendars) - Stock Exchange Trading Calendars.
-- [bizdays](https://github.com/wilsonfreitas/python-bizdays) - Business days calculations and utilities.
-- [pandas_market_calendars](https://github.com/rsheftel/pandas_market_calendars) - Exchange calendars to use with pandas for trading applications.
+- [trading_calendars](https://github.com/quantopian/trading_calendars) - Stock exchange trading calendars
+- [bizdays](https://github.com/wilsonfreitas/python-bizdays) - Business days calculations and utilities
+- [pandas_market_calendars](https://github.com/rsheftel/pandas_market_calendars) - Exchange calendars for pandas trading applications
 
 ### Data Sources
 
-- [findatapy](https://github.com/cuemacro/findatapy) - Python library to download market data via Bloomberg, Quandl, Yahoo etc.
-- [googlefinance](https://github.com/hongtaocai/googlefinance) - Python module to get real-time stock data from Google Finance API.
-- [yahoo-finance](https://github.com/lukaszbanasiak/yahoo-finance) - Python module to get stock data from Yahoo! Finance.
-- [pandas-datareader](https://github.com/pydata/pandas-datareader) - Python module to get data from various sources (Google Finance, Yahoo Finance, FRED, OECD, Fama/French, World Bank, Eurostat...) into Pandas datastructures such as DataFrame, Panel with a caching mechanism.
-- [pandas-finance](https://github.com/davidastephens/pandas-finance) - High level API for access to and analysis of financial data.
-- [pyhoofinance](https://github.com/innes213/pyhoofinance) - Rapidly queries Yahoo Finance for multiple tickers and returns typed data for analysis.
-- [yfinanceapi](https://github.com/Karthik005/yfinanceapi) - Finance API for Python.
-- [yql-finance](https://github.com/slawek87/yql-finance) - yql-finance is simple and fast. API returns stock closing prices for current period of time and current stock ticker (i.e. APPL, GOOGL).
-- [ystockquote](https://github.com/cgoldberg/ystockquote) - Retrieve stock quote data from Yahoo Finance.
-- [wallstreet](https://github.com/mcdallas/wallstreet) - Real time stock and option data.
-- [stock_extractor](https://github.com/ZachLiuGIS/stock_extractor) - General Purpose Stock Extractors from Online Resources.
-- [Stockex](https://github.com/cttn/Stockex) - Python wrapper for Yahoo! Finance API.
-- [finsymbols](https://github.com/skillachie/finsymbols) - Obtains stock symbols and relating information for SP500, AMEX, NYSE, and NASDAQ.
-- [FRB](https://github.com/avelkoski/FRB) - Python Client for FRED® API.
-- [inquisitor](https://github.com/econdb/inquisitor) - Python Interface to Econdb.com API.
-- [yfi](https://github.com/nickelkr/yfi) - Yahoo! YQL library.
-- [chinesestockapi](https://pypi.org/project/chinesestockapi/) - Python API to get Chinese stock price.
-- [exchange](https://github.com/akarat/exchange) - Get current exchange rate.
-- [ticks](https://github.com/jamescnowell/ticks) - Simple command line tool to get stock ticker data.
-- [pybbg](https://github.com/bpsmith/pybbg) - Python interface to Bloomberg COM APIs.
-- [ccy](https://github.com/lsbardel/ccy) - Python module for currencies.
-- [tushare](https://pypi.org/project/tushare/) - A utility for crawling historical and Real-time Quotes data of China stocks.
-- [jsm](https://pypi.org/project/jsm/) - Get the japanese stock market data.
-- [cn_stock_src](https://github.com/jealous/cn_stock_src) - Utility for retrieving basic China stock data from different sources.
-- [coinmarketcap](https://github.com/barnumbirr/coinmarketcap) - Python API for coinmarketcap.
-- [after-hours](https://github.com/datawrestler/after-hours) - Obtain pre market and after hours stock prices for a given symbol.
-- [bronto-python](https://pypi.org/project/bronto-python/) - Bronto API Integration for Python.
-- [pytdx](https://github.com/rainx/pytdx) - Python Interface for retrieving chinese stock realtime quote data from TongDaXin Nodes.
-- [pdblp](https://github.com/matthewgilbert/pdblp) - A simple interface to integrate pandas and the Bloomberg Open API.
-- [tiingo](https://github.com/hydrosquall/tiingo-python) - Python interface for daily composite prices/OHLC/Volume + Real-time News Feeds, powered by the Tiingo Data Platform.
-- [iexfinance](https://github.com/addisonlynch/iexfinance) - Python Interface for retrieving real-time and historical prices and equities data from The Investor's Exchange.
-- [pyEX](https://github.com/timkpaine/pyEX) - Python interface to IEX with emphasis on pandas, support for streaming data, premium data, points data (economic, rates, commodities), and technical indicators.
-- [alpaca-trade-api](https://github.com/alpacahq/alpaca-trade-api-python) - Python interface for retrieving real-time and historical prices from Alpaca API as well as trade execution.
-- [metatrader5](https://pypi.org/project/MetaTrader5/) - API Connector to MetaTrader 5 Terminal
-- [akshare](https://github.com/jindaxiang/akshare) - AkShare is an elegant and simple financial data interface library for Python, built for human beings! <https://akshare.readthedocs.io>
-- [yahooquery](https://github.com/dpguthrie/yahooquery) - Python interface for retrieving data through unofficial Yahoo Finance API.
-- [investpy](https://github.com/alvarobartt/investpy) - Financial Data Extraction from Investing.com with Python! <https://investpy.readthedocs.io/>
-- [yliveticker](https://github.com/yahoofinancelive/yliveticker) - Live stream of market data from Yahoo Finance websocket.
-- [bbgbridge](https://github.com/ran404/bbgbridge) - Easy to use Bloomberg Desktop API wrapper for Python.
+- [findatapy](https://github.com/cuemacro/findatapy) - Market data download library for Bloomberg, Quandl, Yahoo and others
+- [googlefinance](https://github.com/hongtaocai/googlefinance) - Real-time stock data from Google Finance API
+- [yahoo-finance](https://github.com/lukaszbanasiak/yahoo-finance) - Stock data from Yahoo Finance
+- [pandas-datareader](https://github.com/pydata/pandas-datareader) - Data from various sources into Pandas data structures
+- [pandas-finance](https://github.com/davidastephens/pandas-finance) - High level API for financial data access and analysis
+- [pyhoofinance](https://github.com/innes213/pyhoofinance) - Rapid Yahoo Finance queries for multiple tickers
+- [yfinanceapi](https://github.com/Karthik005/yfinanceapi) - Finance API for Python
+- [yql-finance](https://github.com/slawek87/yql-finance) - Simple and fast stock closing prices API
+- [ystockquote](https://github.com/cgoldberg/ystockquote) - Stock quote data from Yahoo Finance
+- [wallstreet](https://github.com/mcdallas/wallstreet) - Real time stock and option data
+- [stock_extractor](https://github.com/ZachLiuGIS/stock_extractor) - General purpose stock extractors from online resources
+- [Stockex](https://github.com/cttn/Stockex) - Python wrapper for Yahoo Finance API
+- [finsymbols](https://github.com/skillachie/finsymbols) - Stock symbols for SP500, AMEX, NYSE, and NASDAQ
+- [FRB](https://github.com/avelkoski/FRB) - Python client for FRED API
+- [inquisitor](https://github.com/econdb/inquisitor) - Python interface to Econdb.com API
+- [yfi](https://github.com/nickelkr/yfi) - Yahoo YQL library
+- [chinesestockapi](https://pypi.org/project/chinesestockapi/) - Python API for Chinese stock prices
+- [exchange](https://github.com/akarat/exchange) - Current exchange rate retrieval
+- [ticks](https://github.com/jamescnowell/ticks) - Command line tool for stock ticker data
+- [pybbg](https://github.com/bpsmith/pybbg) - Python interface to Bloomberg COM APIs
+- [ccy](https://github.com/lsbardel/ccy) - Python module for currencies
+- [tushare](https://pypi.org/project/tushare/) - Utility for Chinese stock historical and real-time data
+- [jsm](https://pypi.org/project/jsm/) - Japanese stock market data retrieval
+- [cn_stock_src](https://github.com/jealous/cn_stock_src) - Utility for Chinese stock data from various sources
+- [coinmarketcap](https://github.com/barnumbirr/coinmarketcap) - Python API for CoinMarketCap
+- [after-hours](https://github.com/datawrestler/after-hours) - Pre-market and after-hours stock prices
+- [bronto-python](https://pypi.org/project/bronto-python/) - Bronto API integration for Python
+- [pytdx](https://github.com/rainx/pytdx) - Python interface for Chinese stock real-time data
+- [pdblp](https://github.com/matthewgilbert/pdblp) - Interface integrating pandas and Bloomberg Open API
+- [tiingo](https://github.com/hydrosquall/tiingo-python) - Daily composite prices and real-time news feeds
+- [iexfinance](https://github.com/addisonlynch/iexfinance) - Real-time and historical prices from IEX
+- [pyEX](https://github.com/timkpaine/pyEX) - Python interface to IEX with pandas support
+- [alpaca-trade-api](https://github.com/alpacahq/alpaca-trade-api-python) - Real-time and historical prices from Alpaca API
+- [MetaTrader5](https://pypi.org/project/MetaTrader5/) - API connector to MetaTrader 5 terminal
+- [akshare](https://github.com/jindaxiang/akshare) - Elegant financial data interface library for Python
+- [yahooquery](https://github.com/dpguthrie/yahooquery) - Python interface for unofficial Yahoo Finance API
+- [investpy](https://github.com/alvarobartt/investpy) - Financial data extraction from Investing.com
+- [yliveticker](https://github.com/yahoofinancelive/yliveticker) - Live market data stream from Yahoo Finance websocket
+- [bbgbridge](https://github.com/ran404/bbgbridge) - Bloomberg Desktop API wrapper for Python
 
 ### Excel Integration
 
-- [xlwings](https://www.xlwings.org/) - Make Excel fly with Python.
-- [openpyxl](https://openpyxl.readthedocs.io/en/latest/) - Read/Write Excel 2007 xlsx/xlsm files.
-- [xlrd](https://github.com/python-excel/xlrd) - Library for developers to extract data from Microsoft Excel spreadsheet files.
-- [xlsxwriter](https://xlsxwriter.readthedocs.io/) - Write files in the Excel 2007+ XLSX file format.
-- [xlwt](https://github.com/python-excel/xlwt) - Library to create spreadsheet files compatible with MS Excel 97/2000/XP/2003 XLS files, on any platform.
-- [DataNitro](https://datanitro.com/) - DataNitro also offers full-featured Python-Excel integration, including UDFs. Trial downloads are available, but users must purchase a license.
-- [xlloop](http://xlloop.sourceforge.net) - XLLoop is an open source framework for implementing Excel user-defined functions (UDFs) on a centralised server (a function server).
-- [expy](http://www.bnikolic.co.uk/expy/expy.html) - The ExPy add-in allows easy use of Python directly from within an Microsoft Excel spreadsheet, both to execute arbitrary code and to define new Excel functions.
-- [pyxll](https://www.pyxll.com) - PyXLL is an Excel add-in that enables you to extend Excel using nothing but Python code.
+- [xlwings](https://www.xlwings.org/) - Make Excel fly with Python
+- [openpyxl](https://openpyxl.readthedocs.io/en/latest/) - Read/write Excel 2007 xlsx/xlsm files
+- [xlrd](https://github.com/python-excel/xlrd) - Library for extracting data from Excel spreadsheet files
+- [xlsxwriter](https://xlsxwriter.readthedocs.io/) - Write Excel 2007+ XLSX files
+- [xlwt](https://github.com/python-excel/xlwt) - Library for creating Excel 97/2000/XP/2003 XLS files
+- [DataNitro](https://datanitro.com/) - Full-featured Python-Excel integration with UDFs
+- [xlloop](http://xlloop.sourceforge.net) - Framework for Excel user-defined functions on centralized server
+- [expy](http://www.bnikolic.co.uk/expy/expy.html) - Python integration directly within Excel spreadsheets
+- [pyxll](https://www.pyxll.com) - Excel add-in for extending Excel with Python code
 
 ### Visualization
 
-- [D-Tale](https://github.com/man-group/dtale) - Visualizer for pandas dataframes and xarray datasets.
+- [D-Tale](https://github.com/man-group/dtale) - Visualizer for pandas dataframes and xarray datasets
 
 ## R
 
 ### Numerical Libraries & Data Structures
 
-- [xts](https://cran.r-project.org/web/packages/xts/index.html) - eXtensible Time Series: Provide for uniform handling of R's different time-based data classes by extending zoo, maximizing native format information preservation and allowing for user level customization and extension, while simplifying cross-class interoperability.
-- [data.table](https://cran.r-project.org/web/packages/data.table/index.html) - Extension of data.frame: Fast aggregation of large data (e.g. 100GB in RAM), fast ordered joins, fast add/modify/delete of columns by group using no copies at all, list columns and a fast file reader (fread). Offers a natural and flexible syntax, for faster development.
-- [sparseEigen](https://github.com/dppalomar/sparseEigen) - Sparse pricipal component analysis.
-- [TSdbi](http://tsdbi.r-forge.r-project.org/) - Provides a common interface to time series databases.
-- [tseries](https://cran.r-project.org/web/packages/tseries/index.html) - Time Series Analysis and Computational Finance.
-- [zoo](https://cran.r-project.org/web/packages/zoo/index.html) - S3 Infrastructure for Regular and Irregular Time Series (Z's Ordered Observations).
-- [tis](https://cran.r-project.org/web/packages/tis/index.html) - Functions and S3 classes for time indexes and time indexed series, which are compatible with FAME frequencies.
-- [tfplot](https://cran.r-project.org/web/packages/tfplot/index.html) - Utilities for simple manipulation and quick plotting of time series data.
-- [tframe](https://cran.r-project.org/web/packages/tframe/index.html) - A kernel of functions for programming time series methods in a way that is relatively independently of the representation of time.
+- [xts](https://cran.r-project.org/web/packages/xts/index.html) - Extensible time series for uniform handling of R's time-based data classes
+- [data.table](https://cran.r-project.org/web/packages/data.table/index.html) - Fast aggregation of large data with ordered joins and column operations
+- [sparseEigen](https://github.com/dppalomar/sparseEigen) - Sparse principal component analysis
+- [TSdbi](http://tsdbi.r-forge.r-project.org/) - Common interface to time series databases
+- [tseries](https://cran.r-project.org/web/packages/tseries/index.html) - Time series analysis and computational finance
+- [zoo](https://cran.r-project.org/web/packages/zoo/index.html) - Infrastructure for regular and irregular time series
+- [tis](https://cran.r-project.org/web/packages/tis/index.html) - Functions and classes for time indexes and time indexed series
+- [tfplot](https://cran.r-project.org/web/packages/tfplot/index.html) - Utilities for time series data manipulation and plotting
+- [tframe](https://cran.r-project.org/web/packages/tframe/index.html) - Kernel functions for programming time series methods
 
 ### Data Sources
 

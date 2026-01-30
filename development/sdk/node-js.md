@@ -1,13 +1,12 @@
 # Node.js
 
+## Node.js Version Issues
 
-node.js 的版本问题
+In Node.js V17, the recently released OpenSSL 3.0 has introduced strict restrictions on allowed algorithms and key sizes, which may cause some impact on the ecosystem. Therefore, previous projects may encounter errors after upgrading the Node.js version.
 
-因为 node.js V17版本中最近发布的OpenSSL3.0, 而OpenSSL3.0对允许算法和密钥大小增加了严格的限制，可能会对生态系统造成一些影响。故此以前的项目在升级 nodejs 版本后会报错
+## Solution
 
-解决方法
-
-修改package.json，在相关构建命令之前加入set NODE_OPTIONS=–openssl-legacy-provider
+Modify package.json by adding `set NODE_OPTIONS=--openssl-legacy-provider` before the relevant build commands:
 
 ```shell
 "scripts": {

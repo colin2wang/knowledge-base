@@ -1,96 +1,197 @@
 # Ubuntu
 
-## Ubuntu Source
+## Package Repository Configuration
 
-> Backup sources list.
+> Backup current sources list before modification.
 ```shell
 sudo cp /etc/apt/sources.list /etc/apt/sources.list.bak
-sudo vi /etc/apt/sources.list
+sudo nano /etc/apt/sources.list
 ```
 
-> Update with following:
+> Replace with one of the following mirror configurations:
+
+### Ubuntu 22.04 LTS (Jammy Jellyfish) - Recommended
 
 ```
-# 中科大
-deb https://mirrors.ustc.edu.cn/ubuntu/ bionic main restricted universe multiverse
-deb-src https://mirrors.ustc.edu.cn/ubuntu/ bionic main restricted universe multiverse
-deb https://mirrors.ustc.edu.cn/ubuntu/ bionic-updates main restricted universe multiverse
-deb-src https://mirrors.ustc.edu.cn/ubuntu/ bionic-updates main restricted universe multiverse
-deb https://mirrors.ustc.edu.cn/ubuntu/ bionic-backports main restricted universe multiverse
-deb-src https://mirrors.ustc.edu.cn/ubuntu/ bionic-backports main restricted universe multiverse
-deb https://mirrors.ustc.edu.cn/ubuntu/ bionic-security main restricted universe multiverse
-deb-src https://mirrors.ustc.edu.cn/ubuntu/ bionic-security main restricted universe multiverse
-deb https://mirrors.ustc.edu.cn/ubuntu/ bionic-proposed main restricted universe multiverse
-deb-src https://mirrors.ustc.edu.cn/ubuntu/ bionic-proposed main restricted universe multiverse
+# Tsinghua University Mirror
+deb https://mirrors.tuna.tsinghua.edu.cn/ubuntu/ jammy main restricted universe multiverse
+deb-src https://mirrors.tuna.tsinghua.edu.cn/ubuntu/ jammy main restricted universe multiverse
+deb https://mirrors.tuna.tsinghua.edu.cn/ubuntu/ jammy-updates main restricted universe multiverse
+deb-src https://mirrors.tuna.tsinghua.edu.cn/ubuntu/ jammy-updates main restricted universe multiverse
+deb https://mirrors.tuna.tsinghua.edu.cn/ubuntu/ jammy-backports main restricted universe multiverse
+deb-src https://mirrors.tuna.tsinghua.edu.cn/ubuntu/ jammy-backports main restricted universe multiverse
+deb https://mirrors.tuna.tsinghua.edu.cn/ubuntu/ jammy-security main restricted universe multiverse
+deb-src https://mirrors.tuna.tsinghua.edu.cn/ubuntu/ jammy-security main restricted universe multiverse
 
-# 163
-deb http://mirrors.163.com/ubuntu/ bionic main restricted universe multiverse
-deb http://mirrors.163.com/ubuntu/ bionic-security main restricted universe multiverse
-deb http://mirrors.163.com/ubuntu/ bionic-updates main restricted universe multiverse
-deb http://mirrors.163.com/ubuntu/ bionic-proposed main restricted universe multiverse
-deb http://mirrors.163.com/ubuntu/ bionic-backports main restricted universe multiverse
-deb-src http://mirrors.163.com/ubuntu/ bionic main restricted universe multiverse
-deb-src http://mirrors.163.com/ubuntu/ bionic-security main restricted universe multiverse
-deb-src http://mirrors.163.com/ubuntu/ bionic-updates main restricted universe multiverse
-deb-src http://mirrors.163.com/ubuntu/ bionic-proposed main restricted universe multiverse
-deb-src http://mirrors.163.com/ubuntu/ bionic-backports main restricted universe multiverse
+# Aliyun Mirror
+deb http://mirrors.aliyun.com/ubuntu/ jammy main restricted universe multiverse
+deb http://mirrors.aliyun.com/ubuntu/ jammy-security main restricted universe multiverse
+deb http://mirrors.aliyun.com/ubuntu/ jammy-updates main restricted universe multiverse
+deb http://mirrors.aliyun.com/ubuntu/ jammy-backports main restricted universe multiverse
+deb-src http://mirrors.aliyun.com/ubuntu/ jammy main restricted universe multiverse
+deb-src http://mirrors.aliyun.com/ubuntu/ jammy-security main restricted universe multiverse
+deb-src http://mirrors.aliyun.com/ubuntu/ jammy-updates main restricted universe multiverse
+deb-src http://mirrors.aliyun.com/ubuntu/ jammy-backports main restricted universe multiverse
 
-# 清华
-deb https://mirrors.tuna.tsinghua.edu.cn/ubuntu/ bionic main restricted universe multiverse
-deb-src https://mirrors.tuna.tsinghua.edu.cn/ubuntu/ bionic main restricted universe multiverse
-deb https://mirrors.tuna.tsinghua.edu.cn/ubuntu/ bionic-updates main restricted universe multiverse
-deb-src https://mirrors.tuna.tsinghua.edu.cn/ubuntu/ bionic-updates main restricted universe multiverse
-deb https://mirrors.tuna.tsinghua.edu.cn/ubuntu/ bionic-backports main restricted universe multiverse
-deb-src https://mirrors.tuna.tsinghua.edu.cn/ubuntu/ bionic-backports main restricted universe multiverse
-deb https://mirrors.tuna.tsinghua.edu.cn/ubuntu/ bionic-security main restricted universe multiverse
-deb-src https://mirrors.tuna.tsinghua.edu.cn/ubuntu/ bionic-security main restricted universe multiverse
-deb https://mirrors.tuna.tsinghua.edu.cn/ubuntu/ bionic-proposed main restricted universe multiverse
-deb-src https://mirrors.tuna.tsinghua.edu.cn/ubuntu/ bionic-proposed main restricted universe multiverse
+# USTC Mirror
+deb https://mirrors.ustc.edu.cn/ubuntu/ jammy main restricted universe multiverse
+deb-src https://mirrors.ustc.edu.cn/ubuntu/ jammy main restricted universe multiverse
+deb https://mirrors.ustc.edu.cn/ubuntu/ jammy-updates main restricted universe multiverse
+deb-src https://mirrors.ustc.edu.cn/ubuntu/ jammy-updates main restricted universe multiverse
+deb https://mirrors.ustc.edu.cn/ubuntu/ jammy-backports main restricted universe multiverse
+deb-src https://mirrors.ustc.edu.cn/ubuntu/ jammy-backports main restricted universe multiverse
+deb https://mirrors.ustc.edu.cn/ubuntu/ jammy-security main restricted universe multiverse
+deb-src https://mirrors.ustc.edu.cn/ubuntu/ jammy-security main restricted universe multiverse
 
-# 阿里云
-deb http://mirrors.aliyun.com/ubuntu/ bionic main restricted universe multiverse
-deb http://mirrors.aliyun.com/ubuntu/ bionic-security main restricted universe multiverse
-deb http://mirrors.aliyun.com/ubuntu/ bionic-updates main restricted universe multiverse
-deb http://mirrors.aliyun.com/ubuntu/ bionic-proposed main restricted universe multiverse
-deb http://mirrors.aliyun.com/ubuntu/ bionic-backports main restricted universe multiverse
-deb-src http://mirrors.aliyun.com/ubuntu/ bionic main restricted universe multiverse
-deb-src http://mirrors.aliyun.com/ubuntu/ bionic-security main restricted universe multiverse
-deb-src http://mirrors.aliyun.com/ubuntu/ bionic-updates main restricted universe multiverse
-deb-src http://mirrors.aliyun.com/ubuntu/ bionic-proposed main restricted universe multiverse
-deb-src http://mirrors.aliyun.com/ubuntu/ bionic-backports main restricted universe multiverse
+# 163 Mirror
+deb http://mirrors.163.com/ubuntu/ jammy main restricted universe multiverse
+deb http://mirrors.163.com/ubuntu/ jammy-security main restricted universe multiverse
+deb http://mirrors.163.com/ubuntu/ jammy-updates main restricted universe multiverse
+deb http://mirrors.163.com/ubuntu/ jammy-backports main restricted universe multiverse
+deb-src http://mirrors.163.com/ubuntu/ jammy main restricted universe multiverse
+deb-src http://mirrors.163.com/ubuntu/ jammy-security main restricted universe multiverse
+deb-src http://mirrors.163.com/ubuntu/ jammy-updates main restricted universe multiverse
+deb-src http://mirrors.163.com/ubuntu/ jammy-backports main restricted universe multiverse
 ```
 
-## Ubuntu Change Hostname
+### Ubuntu 20.04 LTS (Focal Fossa) - Legacy Support
 
-在Ubuntu系统中，快速查看主机名有多种方法：
-其一，打开一个GNOME终端窗口，在命令提示符中可以看到主机名，主机名通常位于“@”符号后；
-其二，在终端窗口中输入命令：hostname或uname –n，均可以查看到当前主机的主机名。
+```
+# Tsinghua University Mirror
+deb https://mirrors.tuna.tsinghua.edu.cn/ubuntu/ focal main restricted universe multiverse
+deb-src https://mirrors.tuna.tsinghua.edu.cn/ubuntu/ focal main restricted universe multiverse
+deb https://mirrors.tuna.tsinghua.edu.cn/ubuntu/ focal-updates main restricted universe multiverse
+deb-src https://mirrors.tuna.tsinghua.edu.cn/ubuntu/ focal-updates main restricted universe multiverse
+deb https://mirrors.tuna.tsinghua.edu.cn/ubuntu/ focal-backports main restricted universe multiverse
+deb-src https://mirrors.tuna.tsinghua.edu.cn/ubuntu/ focal-backports main restricted universe multiverse
+deb https://mirrors.tuna.tsinghua.edu.cn/ubuntu/ focal-security main restricted universe multiverse
+deb-src https://mirrors.tuna.tsinghua.edu.cn/ubuntu/ focal-security main restricted universe multiverse
+```
 
-2、临时修改主机名
+> After updating the sources list, run:
+```shell
+sudo apt update
+sudo apt upgrade
+```
 
-命令行下运行命令：“hostname 新主机名”
-其中“新主机名”可以用任何合法字符串来表示。不过采用这种方式，新主机名并不保存在系统中，重启系统后主机名将恢复为原先的主机名称。
-例子：hostname ubuntu-temp
-这样主机名字就临时被修改为ubuntu-temp，但是终端下不会立即显示生效后的主机名，重开一个终端窗口(通过ssh连接的终端需要重新连接才可以);
+## Hostname Management
 
-http://hovertree.com/menu/ubuntu/
-3、永久修改主机名
+### Check Current Hostname
 
-在Ubuntu系统中永久修改主机名也比较简单。主机名存放在/etc/hostname文件中，修改主机名时，编辑hostname文件，在文件中输入新的主机名并保存该文件即可。重启系统后，参照上面介绍的快速查看主机名的办法来确认主机名有没有修改成功。
+There are several ways to quickly check the hostname in Ubuntu system:
 
-值的指出的是，在其它Linux发行版中，并非都存在/etc/hostname文件。如Fedora发行版将主机名存放在/etc/sysconfig/network文件中。所以，修改主机名时应注意区分是哪种Linux发行版。
+1. Open a GNOME terminal window and observe the command prompt - the hostname is typically displayed after the "@" symbol
+2. Run either of these commands in terminal:
+```shell
+hostname
+uname -n
+```
 
-3、/etc/hostname与/etc/hosts的区别
-/etc/hostname中存放的是主机名，hostname文件的一个例子：
-v-jiwan-ubuntu-temp
+### Temporary Hostname Change
 
-/etc/hosts存放的是域名与ip的对应关系，域名与主机名没有任何关系，你可以为任何一个IP指定任意一个名字，hostname文件的一个例子：
-127.0.0.1       localhost
-127.0.1.1       v-jiwan-ubuntu
+To temporarily change the hostname, run:
+```shell
+sudo hostname new-hostname
+```
+
+Where "new-hostname" can be any valid string. Note that this method doesn't persist after reboot - the system will revert to the original hostname.
+
+Example:
+```shell
+sudo hostname ubuntu-temp
+```
+
+The new hostname won't immediately appear in the current terminal session. You'll need to open a new terminal window (SSH connections need to be re-established).
+
+### Permanent Hostname Change
+
+To permanently change the hostname in Ubuntu:
+
+1. Edit the hostname file:
+```shell
+sudo nano /etc/hostname
+```
+
+2. Replace the existing hostname with your desired name and save the file
+
+3. Also update the hosts file to maintain consistency:
+```shell
+sudo nano /etc/hosts
+```
+
+4. Find the line containing the current hostname and update it:
+```
+127.0.1.1       old-hostname
+```
+to:
+```
+127.0.1.1       new-hostname
+```
+
+5. Apply changes without reboot:
+```shell
+sudo hostnamectl set-hostname new-hostname
+sudo systemctl restart systemd-logind
+```
+
+### Difference Between /etc/hostname and /etc/hosts
+
+- `/etc/hostname`: Contains the actual system hostname
+  Example content: `ubuntu-server`
+
+- `/etc/hosts`: Contains IP address to hostname mappings
+  The hostname mapping here is separate from the system hostname
+  Example content:
+  ```
+  127.0.0.1       localhost
+  127.0.1.1       ubuntu-server
+  ```
+
+Note: Different Linux distributions store hostname information in different locations. For example, Fedora stores it in `/etc/sysconfig/network`. Always verify the correct location for your specific distribution.
 
 
-## Ubuntu系统时间相差8小时解决方法
+## Time Zone and Clock Synchronization
+
+### Fix 8-Hour Time Difference Issue
+
+If your Ubuntu system shows a time difference of 8 hours (common in dual-boot systems with Windows):
 
 ```shell
-sudo timedatectl set-local-rtc 1 
+# Set hardware clock to local timezone (Windows compatibility)
+sudo timedatectl set-local-rtc 1 --adjust-system-clock
 ```
+
+### Modern Time Management Commands
+
+```shell
+# Check current time settings
+timedatectl status
+
+# List available timezones
+timedatectl list-timezones
+
+# Set timezone (example for Shanghai)
+sudo timedatectl set-timezone Asia/Shanghai
+
+# Enable automatic time synchronization
+sudo timedatectl set-ntp true
+
+# Manual time synchronization
+sudo systemctl restart systemd-timesyncd
+```
+
+### Dual-Boot System Considerations
+
+For systems dual-booting with Windows, you have two options:
+
+1. **Hardware clock in local time** (recommended for dual-boot):
+```shell
+sudo timedatectl set-local-rtc 1
+```
+
+2. **Hardware clock in UTC** (Linux standard):
+```shell
+sudo timedatectl set-local-rtc 0
+```
+
+Choose based on whether you primarily use Linux or need Windows compatibility.

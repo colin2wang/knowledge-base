@@ -1,66 +1,66 @@
-# IO多路复用是什么意思
+# I/O Multiplexing Explained
 
-IO 多路复用是5种I/O模型中的第3种，下面通过一个生动的故事来解释各种模型的区别：
+I/O multiplexing represents the third of five fundamental I/O models in system programming. The following narrative illustrates the key distinctions between different I/O paradigms:
 
-## 故事情节设定
+## Scenario Setup
 
-**场景**：老李去买火车票，三天后买到一张退票
-**参演人员**：老李，黄牛，售票员，快递员
-**时间成本**：往返车站耗费1小时
+**Context**: Mr. Li needs to purchase a train ticket, specifically a refund ticket that becomes available after three days
+**Characters**: Mr. Li (client), Ticket Scalper (intermediary), Ticket Clerk (server), Courier (delivery service)
+**Time Cost**: Round trip to station takes 1 hour
 
-## 1. 阻塞I/O模型
+## 1. Blocking I/O Model
 
-老李去火车站买票，排队三天买到一张退票。
+Mr. Li goes to the train station to buy a ticket and waits in line for three days to purchase a refund ticket.
 
-**耗费**：在车站吃喝拉撒睡 3天，其他事一件没干。
-
----
-
-## 2. 非阻塞I/O模型
-
-老李去火车站买票，隔12小时去火车站问有没有退票，三天后买到一张票。
-
-**耗费**：往返车站6次，路上6小时，其他时间做了好多事。
+**Cost**: Spends 3 days at the station for eating, drinking, sleeping, and other necessities, accomplishing nothing else.
 
 ---
 
-## 3. I/O复用模型
+## 2. Non-blocking I/O Model
+
+Mr. Li visits the train station periodically every 12 hours to inquire about refund tickets, eventually purchasing one after three days.
+
+**Cost**: Makes 6 round trips to the station, spending 6 hours traveling, but manages to accomplish other tasks during waiting periods.
+
+---
+
+## 3. I/O Multiplexing Model
 
 ### 3.1 select/poll
 
-老李去火车站买票，委托黄牛，然后每隔6小时电话黄牛询问，黄牛三天内买到票，然后老李去火车站交钱领票。
+Mr. Li delegates the ticket purchase to a scalper, then calls every 6 hours to check status. The scalper acquires the ticket within three days, after which Mr. Li goes to the station to pay and collect the ticket.
 
-**耗费**：往返车站2次，路上2小时，黄牛手续费100元，打电话17次
+**Cost**: 2 round trips to station (2 hours travel time), 100 yuan commission fee, 17 phone calls
 
 ### 3.2 epoll
 
-老李去火车站买票，委托黄牛，黄牛买到后即通知老李去领，然后老李去火车站交钱领票。
+Mr. Li delegates the ticket purchase to a scalper, who notifies Mr. Li immediately upon acquisition. Mr. Li then proceeds to the station to complete the transaction.
 
-**耗费**：往返车站2次，路上2小时，黄牛手续费100元，无需打电话
-
----
-
-## 4. 信号驱动I/O模型
-
-老李去火车站买票，给售票员留下电话，有票后，售票员电话通知老李，然后老李去火车站交钱领票。
-
-**耗费**：往返车站2次，路上2小时，免黄牛费100元，无需打电话
+**Cost**: 2 round trips to station (2 hours travel time), 100 yuan commission fee, no phone calls required
 
 ---
 
-## 5. 异步I/O模型
+## 4. Signal-driven I/O Model
 
-老李去火车站买票，给售票员留下电话，有票后，售票员电话通知老李并快递送票上门。
+Mr. Li provides his phone number to the ticket clerk at the station. When a ticket becomes available, the clerk calls Mr. Li directly, who then proceeds to the station to complete the purchase.
 
-**耗费**：往返车站1次，路上1小时，免黄牛费100元，无需打电话
+**Cost**: 2 round trips to station (2 hours travel time), no scalper fee (100 yuan saved), no proactive calls required
 
 ---
 
-## 各模型对比总结
+## 5. Asynchronous I/O Model
 
-| 模型类型 | 核心区别 |
-|---------|---------|
-| 阻塞I/O vs 非阻塞I/O | 自己轮询 |
-| 非阻塞I/O vs I/O复用 | 委托黄牛 |
-| I/O复用 vs 信号驱动I/O | 电话代替黄牛 |
-| 信号驱动I/O vs 异步I/O | 电话通知是自取还是送票上门 |
+Mr. Li provides contact information to the ticket clerk. Upon ticket availability, the clerk notifies Mr. Li and arranges courier delivery to his location.
+
+**Cost**: 1 round trip to station (1 hour travel time), no scalper fee (100 yuan saved), no proactive calls required
+
+---
+
+## Model Comparison Summary
+
+| Model Type | Key Distinction |
+|------------|----------------|
+| Blocking I/O vs Non-blocking I/O | Self-polling approach |
+| Non-blocking I/O vs I/O Multiplexing | Delegation to intermediary |
+| I/O Multiplexing vs Signal-driven I/O | Phone calls replace intermediaries |
+| Signal-driven I/O vs Asynchronous I/O | Notification method (pickup vs delivery) |
