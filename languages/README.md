@@ -17,5 +17,8 @@ Open source programming language that makes it easy to build simple, reliable, a
 ## [Rust](rust/README.md)
 Multi-paradigm programming language focused on performance and safety, especially safe concurrency.
 
+## [JavaScript](../javascript/README.md)
+Dynamic programming language commonly used for web development, enabling interactive web pages and server-side applications.
+
 ## [Dart](dart/README.md)
 Client-optimized language for fast apps on any platform, primarily used with Flutter for mobile development.

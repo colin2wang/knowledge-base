@@ -5,7 +5,7 @@ This is a personal repository for self-learning and knowledge organization acros
 ## 📚 Categories
 
 ### [Programming Languages](languages/README.md)
-Comprehensive guides and references for various programming languages including C++, Java, Python, Go, Rust, and Dart.
+Comprehensive guides and references for various programming languages including Java, JavaScript, Python, Go, and more.
 
 ### [Operating Systems](os/README.md)
 Documentation for different operating systems including Ubuntu Linux, Windows, and macOS.
